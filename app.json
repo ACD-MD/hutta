@@ -1,0 +1,30 @@
+{
+  "name": "SHADOW-MD",
+  "description": "MADE BY DARK SHADOW TEAM ",
+  "logo": "https://i.ibb.co/rFwy1k0/IMG-20241206-WA0223.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "ALIVE_IMG": {
+      "description": "https://i.ibb.co/rFwy1k0/IMG-20241206-WA0223.jpg": true
+    },
+    
+    "ALIVE_MSG": {
+      "description": "Put your alive msg here.",
+      "required": true
+    }   
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
